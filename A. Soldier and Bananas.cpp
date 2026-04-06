@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main ( )
+{
+    int k,n,w,i,sum=0,borrow;
+    cin>>k>>n>>w;
+    for(int i=1;i<=w;i++) {
+        sum +=i*k;
+    }
+    if(sum>n) {
+        borrow=sum-n;
+    }
+    else {
+        borrow=0;
+    }
+
+    cout<<borrow<<endl;
+    return 0;
+
+}
